@@ -1,0 +1,23 @@
+{
+  "id": "1ca2eec9-552b-40f5-89d4-0044a2d4afd5",
+  "name": "Data Deletion Tool",
+  "publisher": "Olister Rumao",
+  "brief": "",
+  "description": "Data Deletion tool copied in Business Central from Olofsimren.com OSRD15.1 by Olister Rumao",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "DataDeletion.png",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50199
+  },
+  "runtime": "2.1"
+}

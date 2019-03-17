@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Microsoft cloud sandbox",
+            "breakOnError": true,
+            "tenant": "cft122.onmicrosoft.com",
+            "startupObjectType": "Page",
+            "startupObjectId": 50190
+        }
+    ]
+}
