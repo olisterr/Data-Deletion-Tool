@@ -110,6 +110,10 @@ report 50199 DataDeletionTool
     trigger OnPostReport()
     begin
         //FetchRecord(37, 'Order', 'SO10041', '2000');
+        if TableNo = 0 then
+            Error('Table No. value cannot be blank');
+        if PrimaryKeyFilter1 = '' then
+            Error('Primary Key value cannot be blank');
         FetchRecord(TableNo, PrimaryKeyFilter1, PrimaryKeyFilter2, PrimaryKeyFilter3);
     end;
 
@@ -139,7 +143,7 @@ report 50199 DataDeletionTool
             repeat
                 IF RecRef.Count = 1 then begin
                     IF Confirm(DeleteConfirm) then begin
-                        //RecRef.Delete();
+                        RecRef.Delete();
                         Message('Record is deleted!')
                     end;
                 end
