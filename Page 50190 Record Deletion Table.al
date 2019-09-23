@@ -147,6 +147,19 @@ page 50190 "Record Deletion Table"
                     RecordDletionMgmt.ViewRecords(Rec);
                 end;
             }
+            action(Action7)
+            {
+                Image = Select;
+                Caption = 'Deleted selective Records';
+                ApplicationArea = All;
+                trigger OnAction()
+                var
+                    ReportDataDeletionTool: Report DataDeletionTool;
+                begin
+                    ReportDataDeletionTool.GetTableNo(Rec."Table ID");
+                    ReportDataDeletionTool.Run();
+                end;
+            }
         }
     }
 
