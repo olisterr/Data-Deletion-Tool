@@ -2,6 +2,8 @@ table 50190 "Record Deletion Table"
 {
     DataClassification = ToBeClassified;
     PasteIsValid = true;
+    Permissions = TableData "17" = IMD, Tabledata "36" = IMD, Tabledata "37" = IMD, Tabledata "38" = IMD, Tabledata "39" = IMD, Tabledata "81" = IMD, Tabledata "21" = IMD, Tabledata "25" = IMD, Tabledata "32" = IMD, Tabledata "110" = IMD, TableData "111" = IMD, TableData "112" = IMD, TableData "113" = IMD, TableData "114" = IMD, TableData "115" = IMD, TableData "120" = IMD, Tabledata "121" = IMD, Tabledata "122" = IMD, Tabledata "123" = IMD, Tabledata "124" = IMD, Tabledata "125" = IMD, Tabledata "169" = IMD, Tabledata "379" = IMD, Tabledata "380" = IMD, Tabledata "271" = IMD, Tabledata "5802" = IMD, tabledata "6650" = IMD, tabledata "6660" = IMD;
+
 
     fields
     {
@@ -18,7 +20,7 @@ table 50190 "Record Deletion Table"
         {
             FieldClass = FlowField;
             Editable = false;
-            CalcFormula = Lookup (AllObjWithCaption."Object Name" WHERE ("Object Type" = CONST (Table), "Object ID" = FIELD ("Table ID")));
+            CalcFormula = Lookup (AllObjWithCaption."Object Name" WHERE("Object Type" = CONST(Table), "Object ID" = FIELD("Table ID")));
         }
         field(3; "No. of Records"; Integer)
         {
@@ -28,7 +30,7 @@ table 50190 "Record Deletion Table"
         {
             FieldClass = FlowField;
             Editable = false;
-            CalcFormula = Count ("Records Del. Table Rel. Error" WHERE ("Table ID" = FIELD ("Table ID")));
+            CalcFormula = Count ("Records Del. Table Rel. Error" WHERE("Table ID" = FIELD("Table ID")));
         }
         field(5; "Delete Records"; Boolean)
         {
